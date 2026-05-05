@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+    <meta name="theme-color" content="#10151f">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Glyph Rush">
+    <title>Glyph Rush</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="icon.svg">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <canvas id="game" aria-label="Glyph Rush game canvas"></canvas>
+
+      <section class="hud hud-top" aria-live="polite">
+        <div>
+          <span class="label">Score</span>
+          <strong id="score">0</strong>
+        </div>
+        <div>
+          <span class="label">Wave</span>
+          <strong id="wave">1</strong>
+        </div>
+        <div>
+          <span class="label">Charge</span>
+          <strong id="charge">100%</strong>
+        </div>
+      </section>
+
+      <section class="hud hud-bottom">
+        <button id="pauseBtn" type="button" aria-label="Pause game">Pause</button>
+        <div class="health" aria-label="Health">
+          <span id="hpBar"></span>
+        </div>
+      </section>
+
+      <section id="overlay" class="overlay">
+        <div class="brand">Glyph Rush</div>
+        <h1>Hunt bright glyphs before the swarm closes in.</h1>
+        <p>Drag to move. Aim anywhere. Hold to fire. Grab green shards for health and blue shards for burst charge.</p>
+        <button id="startBtn" type="button">Start Run</button>
+      </section>
+    </main>
+
+    <script src="game.js" defer></script>
+  </body>
+</html>
