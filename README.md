@@ -18,3 +18,8 @@ Open `http://localhost:4173`.
 4. Launch Glyph Rush from the new icon.
 
 The game registers a service worker, so it will keep working offline after the first load.
+
+
+---
+
+**🔒 Related:** [iscooked.com](https://github.com/johnpippett/iscooked) — One-command local AI security scanner. Find out if your Ollama, LM Studio, or self-hosted LLM setup is leaking. `curl -fsSL https://iscooked.com/iscooked.com | bash`
